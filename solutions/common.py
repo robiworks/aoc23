@@ -1,7 +1,7 @@
 def read_input(path: str):
     with open(path) as f:
         lines = f.readlines()
-        return lines
+        return [l.strip() for l in lines]
 
 
 def write_output(path: str, part1: str | int, part2: str | int):
